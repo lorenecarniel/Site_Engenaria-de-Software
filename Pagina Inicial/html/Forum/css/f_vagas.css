@@ -1,0 +1,246 @@
+﻿
+.titulo {
+    color: #ff3700;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+    margin: 2rem 0;
+}
+.titulo2{
+    font-size: 18px;
+    color: #16254c;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+/*Ajusta o tamanho do card*/
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+
+/*Ajusta o tamanho do card*/
+
+.container .card {
+    background-color: white;
+    width: 330px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+
+/*Faz o card subir um pouco para cima*/
+
+.container .card:hover {
+    background-color: white;
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/*Ajusta o tamanho da imagem que est� dentro do card*/
+
+/*.container .card img {
+    width: 330px;
+    height: 220px;
+}*/
+
+
+/*Ajusta a letra h4*/
+
+.container .card h4 {
+    font-weight: 600;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+
+/*Ajusta o paragrafo*/
+
+.container .card p {
+    padding: 0 1rem;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+
+/*Ajusta o Lerm more*/
+
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+
+/*Modal*/
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0vh;
+    max-height: 100%;
+    background-color: transparent;
+    transition: background-color 0.25s ease;
+}
+
+.modal.open {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.25s;
+}
+
+.modal.open>.content-wrapper {
+    transform: scale(1);
+}
+
+.modal .content-wrapper {
+    /*position: relative;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    margin: 0;
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.5);
+    transform: scale(0);
+    transition: transform 0.25s;
+    transition-delay: 0.15s;
+    max-width: 600px;
+    min-width: 360px;
+    max-height: 85%;
+    position: relative;
+}
+
+.modal .content-wrapper .close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    border: 0;
+    font-weight: bold;
+    background: transparent;
+}
+
+.modal-close:after {
+    content: "X";
+    float: right;
+    margin: 5px 5px 0 0;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    font-weight: bold;
+    background: transparent;
+}
+
+.modal .content-wrapper .modal-headerr {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 1.25rem;
+}
+
+.modal .content-wrapper .modal-headerr h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.modal .content-wrapper .content {
+    position: relative;
+    display: flex;
+    overflow: auto;
+}
+
+.modal .content-wrapper .content p {
+    font-size: 0.875rem;
+    line-height: 1.75;
+}
+
+.trigger {
+    border: 0;
+    /*background-color: white;*/
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: underline;
+    color: #3498db;
+    font-family: "Nunito Sans", sans-serif;
+    margin-top: 15px;
+    font-weight: bold;
+    background: transparent;
+}
+
+h4 {
+    color: #ffcf06 ;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+    background-color: #eee;
+}
+
+h3 {
+    color: #16254c;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+    font-size: 18px;
+    margin: 2rem;
+}
+.modal-headerr h3{
+    color: #fff;
+}
+
+.btnVerMais {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    border: solid 1px #16254c;
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #16254c;
+    margin: 2rem auto;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+
+  .mapicon{
+    font-size: 30px;
+    margin-left: 15px;
+    color: #ffcf06;
+  }

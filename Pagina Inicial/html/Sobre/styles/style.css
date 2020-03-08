@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #eee;
+}
+
+nav, ul {
+  list-style: none;
+}
+
+a {
+  opacity: 0.9;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+
+/*Matriz Curricular*/
+
+.matriz-curricular {
+  border-radius: 8px;
+  overflow: hidden;
+  list-style: none;
+  text-decoration: none;
+}
+
+.disciplina {
+  border-top: 1px solid #16254c;
+  overflow: hidden;
+}
+
+.btn {
+  display: block;
+  padding: 16px 20px;
+  background: #16254c;
+  color: #fff;
+  position: relative;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #16254c;
+  left: 20px;
+  bottom: -7px;
+  transform: rotate(45deg);
+}
+
+#cor1 {
+  display: block;
+  padding: 16px 20px;
+  background: #ffbf57;
+  color: #16254c;
+  position: relative;
+}
+
+#cor1:before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #ffbf57;
+  left: 20px;
+  bottom: -7px;
+  transform: rotate(45deg);
+}
+
+.sobre {
+  background: white;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  max-height: 0;
+}
+
+.sobre a {
+  display: block;
+  padding: 16px 26px;
+  color: #16254c;
+  font-size: 14px;
+  margin: 4px 0;
+  position: relative;
+}
+
+.sobre a:before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #ffcf06;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.sobre a:hover:before {
+  opacity: 1;
+}
+
+/*Scroll*/
+
+.scroll {
+  width: 1000px;
+  height: 500px;
+  margin: 50px auto;
+  padding: 0;
+  background: #fff;
+  overflow: auto;
+  font-family: 'Nunito Sans';
+  border-radius: 4px;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 7px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: #ff9d00;
+  border-radius: 5px;
+}
+
+/*Cards dos Docentes*/
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  height: 320px;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+}
+
+.swiper-slide p, .swiper-slide h3 {
+  text-align: center;
+  font-size: 16px;
+}
+.swiper-slide h3{
+  margin: 0.5rem 0!important;
+}
+
+
+.Docente {
+  background: #16254c;
+}
+
+/*Formatação Bloco 1*/
+
+.engsoft {
+  background-color: #eee;
+}
+
+.engsoft h1, .matriz h1, .infraestrutura h1, .video h1 {
+  color: #ff3700;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.engsoft h4 {
+  color: #16254c;
+  text-decoration: underline;
+}
+
+.engsoft p, .infraestrutura p {
+  color: black;
+  text-indent: 15px;
+  text-align: justify;
+  line-height: 150%;
+}
+
+.engsoft p, h4, .infraestrutura p {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.swiper-slide img {
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+  margin-bottom: 2rem;
+}
+
+/*Formatação Bloco 2*/
+
+.mySlides {
+  display: none
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: #16254c;
+}
+
+.video h1 {
+  color: #ff9d00;
+  text-align: center;
+}
+
+.prev {
+  left: 0;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.v1, .v2 {
+  width: 1000px;
+  height: 562px;
+}
+
+/*Formatação Bloco 3*/
+
+/*Formatação Bloco 4*/
+
+.Docente h1 {
+  color: #ff9d00;
+  text-align: center;
+}
+
+/*Formatação Bloco 5*/
+
+a:visited {
+  text-decoration: none!important;
+}
+
+.btnVerMais {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  border: solid 1px #16254c;
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #16254c;
+  margin: 2rem auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+a {
+  background-color: transparent;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+.mapicon{
+  font-size: 30px;
+  margin-left: 15px;
+  color: #ffcf06;
+}

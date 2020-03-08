@@ -1,0 +1,159 @@
+.titulo {
+    color: #ff3700;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+    margin: 2rem 0;
+}
+
+
+/* Font */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+
+html {
+    background-color: #eee;
+}
+
+.main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* Design */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: #272727;
+    font-family: "Nunito Sans", sans-serif;
+    font-style: normal;
+    /*font-weight: 600;*/
+    letter-spacing: 0;
+}
+
+h1 {
+    color: #ff3700;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.cards img {
+    height: 200px;
+    width: 340px;
+    vertical-align: middle;
+}
+
+.btn {
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards_item {
+    display: flex;
+    padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .cards_item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards_item {
+        width: 33.333333%;
+    }
+}
+
+.card {
+    background-color: #eee;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+}
+
+.card_content {
+    padding: 1rem;
+	/*cor do card*/
+    background: #16254c;
+}
+
+.card_title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+
+.card_text {
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+
+h3 {
+    color: #16254c;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+.btnVerMais {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    border: solid 1px #16254c;
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #16254c;
+    margin: 2rem auto;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+.mapicon{
+    font-size: 30px;
+    margin-left: 15px;
+    color: #ffcf06;
+  }

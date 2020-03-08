@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+nav, ul {
+    list-style: none;
+}
+
+/*Cards*/
+
+#Cards .meta li {
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+#Cards .meta li::after {
+    margin-left: 5px;
+    content: "|";
+}
+
+#Cards .meta li:last-child::after {
+    margin-left: 0;
+    content: "";
+}
+
+#Cards article:not(:first-child) {
+    margin-left: 1%;
+}
+
+#Cards article {
+    border: 1px solid #ddd;
+    height: 600px;
+    width: 400px;
+}
+
+#Cards article:hover {
+    box-shadow: 0 0 10px .2rem rgba(0, 0, 0, 0.1);
+}
+
+/*Image Hover Effect */
+
+.hover a img {
+    transform: rotate(15deg) scale(1.4);
+    transition: 0.3s ease-in-out;
+}
+
+.hover a:hover img {
+    transform: rotate(0) scale(1);
+}
+
+article a {
+    background: #fff;
+    height: 250px;
+    overflow: hidden;
+}
+
+/*General Configuration*/
+
+.d-flex-r {
+    display: flex !important;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.heading {
+    font-family: "Nunito Sans", sans-serif;
+    margin: 10px;
+    line-height: normal;
+    font-size: 30px;
+    color: #ff3700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.heading2 {
+    font-family: "Nunito Sans", sans-serif;
+    line-height: normal;
+    font-size: 20px;
+    color: #16254c;
+}
+
+section {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+}
+
+/*Bottom*/
+
+article .btn {
+    display: inline-block;
+    padding: 8px 18px;
+    text-transform: uppercase;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+article .btn, article .btn.inverse:hover {
+    color: #fff;
+    background-color: #ff3700;
+    border-color: #ff3700;
+}
+
+article .btn:hover, article .btn.inverse {
+    color: inherit;
+    background-color: transparent;
+    border-color: inherit;
+}
+
+/*Text configuration*/
+
+.text-center {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-justify {
+    text-align: justify;
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0 2rem;
+    font-size: 15px;
+    text-indent: 5px;
+    line-height: 150%;
+}
+
+/*Image cards*/
+
+#imag {
+    height: 250px;
+    width: 350px;
+}
+
+/*Slider*/
+
+.container-slide, .container-slide2, .container-slide3, .container-slide4 {
+    position: relative;
+    background: black;
+}
+
+.container-slide img, .container-slide2 img, .container-slide3 img, .container-slide4 img {
+    margin: 0 auto;
+}
+
+.mySlides, .mySlides2, .mySlides3, .mySlides4 {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev, .prev2, .prev3, .prev4, .next, .next2, .next3,.next4 {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next, .next2, .next3, .next4 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .prev2:hover, .prev3:hover, .prev4:hover, .next:hover, .next2:hover, .next3:hover, .next4:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext, .numbertext2, .numbertext3, .numbertext4 {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dell {
+    width: 800px;
+    height: 500px;
+    margin: 1rem 11rem;
+}
+
+.config2 {
+    width: 530px;
+    height: 750px;
+    margin-left: 250px;
+}
+
+/*Effect Modal*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal .modal-content {
+    margin: 10% auto;
+    width: 80%;
+    -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    -webkit-animation-name: modalopen;
+    animation-name: modalopen;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.modal .modal-content .modal-header {
+    padding: 15px;
+    color: #ff3700;
+    background-color: #eee;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.modal .modal-content .modal-body {
+    padding: 10px 20px;
+    background-color: #eee;
+}
+
+.modal .modal-content .modal-footer {
+    background: var(--modal-color);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.close {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    color: #fff;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-body hr {
+    height: 1px;
+    width: 28rem;
+    margin: auto;
+    border: none;
+    background-color: #16254c;
+}
+
+.modal-body p {
+    font-family: "Nunito Sans", sans-serif;
+    color: #16254c;
+    text-align: justify;
+    line-height: 150%;
+    text-indent: 15px;
+}
+
+.modal-header {
+    text-align: center;
+}
+
+.modal-body h2 {
+    font-family: "Nunito Sans", sans-serif;
+    color: #ff3700;
+    text-align: center;
+}
+
+#sam {
+    font-size: 20px;
+    text-align: center;
+}
+
+#config {
+    width: 600px;
+    height: 800px;
+    margin-left: 210px;
+}
+
+@-webkit-keyframes modalopen {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes modalopen {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+a:visited {
+    text-decoration: none!important;
+}
+
+.btnVerMais {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    border: solid 1px #16254c;
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #16254c;
+    margin: 2rem auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: transparent;
+}
+
+.button {
+    background: #428bca;
+    color: #fff;
+    padding: 5px 16px;
+    font-size: 45px;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #3876ac;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mapicon{
+    font-size: 30px;
+    margin-left: 15px;
+    color: #ffcf06;
+  }

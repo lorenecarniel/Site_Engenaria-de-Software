@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale= 1">
+  <title>Engenharia de Software</title>
+  <meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″>
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../../struct.css">
+</head>
+
+<body>
+
+  <!--Header-->
+  <header>
+    <a href="../../Pagina Inicial/html/index.html"><img src="../../Pagina Inicial/assets/logo.png"
+        alt="Engenharia de Software" width="300"></a>
+
+    <div class="links">
+      <ul class="menu">
+        <li><a href="Sobre/html/index.html">Sobre</a></li>
+        <li><a href="Eventos/html/index.html">Eventos</a></li>
+        <li><a href="Projetos/html/index.html">Projetos</a></li>
+        <li><a id="a_forum" href="#">Fórum</a></li>
+      </ul>
+      <div id="forum_dropdown" class="dropdown">
+        <ul>
+          <li><a href="Forum/UNATech.html">UNATech</a></li>
+          <li><a href="Forum/Forum Noticias.html">Notícias</a></li>
+          <li><a href="Forum/Forum Vagas.html">Vagas</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="contato">
+      <span><i class="fas fa-phone-alt"></i>(16) 3603-7000</span>
+      <span><i class="fas fa-map-marker-alt"></i><a id="link"
+          href="https://www.google.com.br/maps/place/Av.+Cost%C3%A1bile+Romano,+2201+-+Ribeir%C3%A2nia,+Ribeir%C3%A3o+Preto+-+SP,+14096-260/@-21.2010556,-47.7811197,17z/data=!3m1!4b1!4m5!3m4!1s0x94b9b8b4683c10df:0xa3e6dae5fa6113f4!8m2!3d-21.2004573!4d-47.7791717">
+          Av. Costábile Romano, 2201</a></span>
+    </div>
+  </header>
+
+  <main>
+    <div class="carousel">
+      <div class="carousel-item active item_1">
+        <div class="carousel-img">
+          <button class="btn_carousel b1"><a href="Sobre/html/index.html">Saiba mais</a></button>
+        </div>
+      </div>
+      <div class="carousel-item item_2">
+        <div class="carousel-img">
+          <button class="btn_carousel b2"><a href="Eventos/html/index.html">Conheça</a></button>
+        </div>
+      </div>
+      <div class="carousel-item item_3">
+        <div class="carousel-img">
+          <button class="btn_carousel b3"><a href="Projetos/html/index.html">Descubra</a></button>
+        </div>
+      </div>
+      <div class="carousel-item item_4">
+        <div class="carousel-img">
+          <button class="btn_carousel b4"><a href="Forum/UNATech.html">Participe</a></button>
+        </div>
+      </div>
+      <div class="indicators">
+        <div id="ind_1" class="active"></div>
+        <div id="ind_2"></div>
+        <div id="ind_3"></div>
+        <div id="ind_4"></div>
+      </div>
+
+    </div>
+
+    <!--Back Top-->
+    <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+
+    <!--Turmas-->
+    <div class="turmas">
+      <div class="head">
+        <h1>Turmas</h1>
+        <p>No curso de Engenharia de Software as turmas tem liberdade para criarem seus próprios logos
+          representativos. Conheça nossas turmas!</p>
+      </div>
+      <hr>
+
+      <div class="centerflipcards">
+        <div class="square-flip">
+          <div class='square' data-image="../assets/logo1.png">
+            <div class="square-container">
+              <div class="align-center"></div>
+            </div>
+            <div class="flip-overlay"></div>
+          </div>
+          <div class='square2' data-image="../assets/logo1.png">
+            <div class="square-container2">
+              <div class="align-center"></div>
+              <h2>Turma de 2018</h2>
+            </div>
+            <div class="flip-overlay2"></div>
+          </div>
+        </div>
+        <div class="square-flip" style="margin: 0 6rem;">
+          <div class='square' data-image="../assets/logo2.png">
+            <div class="square-container">
+              <div class="align-center"></div>
+            </div>
+            <div class="flip-overlay"></div>
+          </div>
+          <div class='square2' data-image="../assets/logo2.png">
+            <div class="square-container2">
+              <div class="align-center"></div>
+              <h2>Turma de 2018.2</h2>
+            </div>
+            <div class="flip-overlay2"></div>
+          </div>
+        </div>
+        <div class="square-flip">
+          <div class='square' data-image="../assets/logo3.png">
+            <div class="square-container">
+              <div class="align-center"></div>
+            </div>
+            <div class="flip-overlay"></div>
+          </div>
+          <div class='square2' data-image="../assets/logo3.png">
+            <div class="square-container2">
+              <div class="align-center"></div>
+              <h2>Turma de 2019</h2>
+            </div>
+            <div class="flip-overlay2"></div>
+          </div>
+        </div>
+      </div>
+      <button id="modal-btn" class="button" title="Adicione dados">+</button>
+  </main>
+ 
+
+  <div id="my-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <div class="cadastro-log">
+          <a class="links" id="pagcadastro"></a>
+          <a class="links" id="paglogin"></a>
+          <div class="container">
+            <div id="login" class="d-none">
+              <form method="post" action="">
+                <div class="modal-wrapper">
+                  <h1>Login</h1>
+                  <p>
+                    <label for="email">Seu e-mail:</label>
+                    <input id="email" name="email" required="required" type="text" />
+                  </p>
+
+                  <p>
+                    <label for="senha">Sua senha:</label>
+                    <input id="senha" name="senha" required="required" type="password" />
+                  </p>
+
+
+                  <p>
+                    <input type="submit" value="Entrar" />
+                  </p>
+                </div>
+
+                <div class="link">
+                  Ainda não é cadastrado?
+                  <a href="#pagcadastro">Cadastre-se</a>
+                </div>
+
+              </form>
+            </div>
+            <div id="cadastro">
+              <form method="post" action="">
+                <div class="modal-wrapper">
+                  <h1>Cadastro</h1>
+
+                  <p>
+                    <label for="nome">Nome: </label>
+                    <input id="nome" name="nome" required="required" type="text" />
+                  </p>
+
+                  <p>
+                    <label for="emailcadastro">E-mail:</label>
+                    <input id="emailcadastro" name="emailcadastro" required="required" type="email" />
+                  </p>
+
+                  <p>
+                    <label for="senhacadastro">Senha: </label>
+                    <input id="senhacadastro" name="senhacadastro" required="required" type="password" />
+                  </p>
+
+                  <label class="radio"> Aluno
+                    <input type="radio" checked="checked" name="radio" value="Aluno">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="radio">Professor
+                    <input type="radio" name="radio" value="Professor">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="radio">Empresa
+                    <input type="radio" name="radio" value="Empresa">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <p>
+                    <input type="submit" value="Cadastrar" />
+                  </p>
+                </div>
+
+                <div class="link">
+                  Já é cadastrado?
+                  <a href="#paglogin"> Ir para Login </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <a class="mapicon" href="../assets/MapaSite.png"><i class="fas fa-sitemap" ></i></a>
+    <div class="icons">
+      <a class="btn"
+        href="https://www.google.com/search?q=unaerp&oq=unaerp&aqs=chrome..69i57j0l4j69i61.1625j1j7&sourceid=chrome&ie=UTF-8"><i
+          class="fab fa-google"></i></a>
+      <a class="btn" href="https://www.facebook.com/universidadeunaerp/"><i class="fab fa-facebook-f"></i></a>
+      <a class="btn" href="https://www.instagram.com/universidadeunaerp/"><i class="fab fa-instagram"></i></a>
+      <a class="btn" href="https://www.youtube.com/user/tvunaerp"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+
+  <!-- Os scripts vem antes de fechar o body -->
+  <script src="https://kit.fontawesome.com/65c949d6ce.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>
+    let myInterval
+    let time = 5000
+    let current = 1
+    let carouselItems = $('.carousel-item')
+
+    $('#a_forum').click(function () {
+      $('#forum_dropdown').slideToggle('fast')
+    })
+
+    $('div[id^=ind_]').click(function () {
+      let _thisSubstr = $(this).attr('id').substr($(this).attr('id').length - 1)
+
+      $('.carousel-item, .indicators div').removeClass('active')
+      $('#ind_' + _thisSubstr).addClass('active')
+      $('.item_' + _thisSubstr).addClass('active')
+
+      clearInterval(myInterval)
+      current = _thisSubstr
+      myInterval = setInterval(carousel, time)
+    })
+
+
+    function carousel() {
+      $('.carousel-item, .indicators div').removeClass('active')
+      $(carouselItems[current]).addClass('active')
+      $('#ind_' + (current + 1)).addClass('active')
+
+      current++
+      if (current == (carouselItems.length)) current = 0
+    }
+
+    myInterval = setInterval(carousel, time)
+
+
+    //Back top buttom
+    const backToTopButton = document.querySelector("#back-to-top-btn");
+    window.addEventListener("scroll", scrollFunction);
+
+    function scrollFunction() {
+      if (window.pageYOffset > 300) { // Show backToTopButton
+        if (!backToTopButton.classList.contains("btnEntrance")) {
+          backToTopButton.classList.remove("btnExit");
+          backToTopButton.classList.add("btnEntrance");
+          backToTopButton.style.display = "block";
+        }
+      }
+      else { // Hide backToTopButton
+        if (backToTopButton.classList.contains("btnEntrance")) {
+          backToTopButton.classList.remove("btnEntrance");
+          backToTopButton.classList.add("btnExit");
+          setTimeout(function () {
+            backToTopButton.style.display = "none";
+          }, 250);
+        }
+      }
+    }
+    backToTopButton.addEventListener("click", smoothScrollBackToTop);
+    function smoothScrollBackToTop() {
+      const targetPosition = 0;
+      const startPosition = window.pageYOffset;
+      const distance = targetPosition - startPosition;
+      const duration = 750;
+      let start = null;
+
+      window.requestAnimationFrame(step);
+
+      function step(timestamp) {
+        if (!start) start = timestamp;
+        const progress = timestamp - start;
+        window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+        if (progress < duration) window.requestAnimationFrame(step);
+      }
+    }
+
+    function easeInOutCubic(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return c / 2 * t * t * t + b;
+      t -= 2;
+      return c / 2 * (t * t * t + 2) + b;
+    };
+  </script>
+  <script>
+    jQuery(document).ready(function ($) {
+
+      //Count nr. of square classes
+      var countSquare = $('.square').length;
+
+      //For each Square found add BG image
+      for (i = 0; i < countSquare; i++) {
+        var firstImage = $('.square').eq([i]);
+        var secondImage = $('.square2').eq([i]);
+
+        var getImage = firstImage.attr('data-image');
+        var getImage2 = secondImage.attr('data-image');
+
+        firstImage.css('background-image', 'url(' + getImage + ')');
+        secondImage.css('background-image', 'url(' + getImage2 + ')');
+      }
+
+    });
+  </script>
+  <script>
+    // Get DOM Elements
+    const modal = document.querySelector('#my-modal');
+    const modalBtn = document.querySelector('#modal-btn');
+    const closeBtn = document.querySelector('.close');
+
+    // Events
+    modalBtn.addEventListener('click', openModal);
+    closeBtn.addEventListener('click', closeModal);
+    window.addEventListener('click', outsideClick);
+
+    // abre
+    function openModal() {
+      modal.style.display = 'flex';
+    }
+
+    // fecha
+    function closeModal() {
+      modal.style.display = 'none';
+    }
+
+    // fecha se clicar fora do modal
+    function outsideClick(e) {
+      if (e.target == modal) {
+        modal.style.display = 'none';
+      }
+    }
+
+    $('#cadastro .link a').click(function () {
+      $('#login').toggleClass('d-none')
+      $('#cadastro').toggleClass('d-none')
+    })
+    $('#login .link a').click(function () {
+      $('#cadastro').toggleClass('d-none')
+      $('#login').toggleClass('d-none')
+    })
+
+  </script>
+</body>
+
+</html>
